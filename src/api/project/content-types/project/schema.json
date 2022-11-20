@@ -37,6 +37,14 @@
       "relation": "manyToOne",
       "target": "api::type.type",
       "inversedBy": "projects"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.register"
     }
   }
 }

@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "email": {
+    "src": {
       "type": "string",
       "required": true
     }
