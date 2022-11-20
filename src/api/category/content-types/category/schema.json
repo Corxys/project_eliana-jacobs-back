@@ -21,6 +21,12 @@
       "relation": "oneToMany",
       "target": "api::type.type",
       "mappedBy": "category"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "category"
     }
   }
 }
