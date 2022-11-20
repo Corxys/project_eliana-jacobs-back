@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "types"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "type"
     }
   }
 }
