@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_link_registers",
+  "info": {
+    "displayName": "register",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

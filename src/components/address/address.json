@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "cp": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

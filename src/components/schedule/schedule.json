@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_schedule_schedules",
+  "info": {
+    "displayName": "Schedule",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "start": {
+      "type": "time",
+      "required": true
+    },
+    "end": {
+      "type": "time"
+    }
+  }
+}
