@@ -27,6 +27,13 @@
       "relation": "oneToMany",
       "target": "api::project.project",
       "mappedBy": "category"
+    },
+    "placeholder": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

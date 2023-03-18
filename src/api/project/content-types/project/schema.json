@@ -45,6 +45,11 @@
       "type": "component",
       "repeatable": false,
       "component": "link.register"
+    },
+    "Index": {
+      "type": "integer",
+      "min": 0,
+      "required": true
     }
   }
 }
