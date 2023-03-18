@@ -2,20 +2,25 @@
   "collectionName": "components_image_images",
   "info": {
     "displayName": "Image",
-    "icon": "image"
+    "icon": "image",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "src": {
-      "allowedTypes": [
-        "images",
-        "videos"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
     },
     "copyright": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     }
   }
