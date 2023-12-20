@@ -18,22 +18,30 @@
     },
     "types": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::type.type",
-      "mappedBy": "category"
+      "mappedBy": "categories"
+    },
+    "placeholder": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "index": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 1,
+      "min": 1
     },
     "projects": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::project.project",
-      "mappedBy": "category"
-    },
-    "placeholder": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+      "inversedBy": "categories"
     }
   }
 }

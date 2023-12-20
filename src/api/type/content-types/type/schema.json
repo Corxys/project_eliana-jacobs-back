@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "types"
-    },
     "projects": {
       "type": "relation",
       "relation": "oneToMany",
@@ -29,12 +23,26 @@
       "mappedBy": "type"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "types"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "list",
+        "gallery"
+      ],
+      "required": true
     }
   }
 }
