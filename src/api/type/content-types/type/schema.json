@@ -43,6 +43,10 @@
         "gallery"
       ],
       "required": true
+    },
+    "index": {
+      "type": "integer",
+      "required": true
     }
   }
 }
